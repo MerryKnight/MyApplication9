@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Поле для ввода названия файла -->
+    <EditText
+        android:id="@+id/editTextFileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите название файла" />
+
+    <!-- Поле для ввода содержимого файла -->
+    <EditText
+        android:id="@+id/editTextFileContent"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:gravity="top"
+        android:hint="Введите содержимое файла"
+        android:lines="5"
+        android:scrollbars="vertical" />
+
+    <!-- Кнопка для создания файла -->
+    <Button
+        android:id="@+id/buttonCreateFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Создать файл" />
+
+    <!-- Кнопка для записи дополнительной информации в файл -->
+
+    <Button
+        android:id="@+id/buttonAppendToFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить информацию в файл" />
+
+    <Button
+        android:id="@+id/buttonReadFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Читать файл" />
+
+    <!-- Кнопка для чтения файла -->
+
+    <!-- Кнопка для удаления файла -->
+
+    <!-- Поле для вывода информации из файла -->
+
+    <Button
+        android:id="@+id/buttonDeleteFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Удалить файл" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/buttonCreateExtFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Создать внешний файл" />
+    <Button
+        android:id="@+id/buttonDeleteExtFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Удалить внешний файл" />
+    <Button
+        android:id="@+id/buttonAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Активность для чтения" />
+
+    <TextView
+        android:id="@+id/textViewFileContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:hint="Содержимое файла"
+        android:textSize="24sp"
+        android:visibility="visible" />
+
+</LinearLayout>
